@@ -1,0 +1,107 @@
+body{
+    background:rgb(244, 236, 224);
+}
+
+.container{
+    width:480px;
+    height:380px;
+    background:white;
+    border-radius:5px;
+    margin:200px auto;
+}
+
+img{
+    width: 240px;
+    height:380px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.title{
+    position:relative;
+    bottom:380px;
+    left:260px
+}
+
+#title{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:13px;
+}
+
+#name{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:23px;
+    font-weight:bold;
+}
+
+.pname{
+    width:150px
+}
+
+.desc{
+    width:180px;
+    position:fixed;
+    top:340px
+}
+
+#desc{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:12px
+}
+
+#price1{
+    font-size:30px;
+    color:rgb(0, 110, 0);
+}
+
+.price1{
+    position:relative;
+    bottom:55px;
+    left:125px
+}
+
+.cart-btn{
+    width:180px;
+    height:50px;
+    position:relative;
+    bottom:45px;
+    border-radius:5px;
+    border-color:transparent;
+    background-color:rgb(0, 79, 0);
+}
+
+#cart-lb{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:17px;
+    color:white;
+}
+
+button{
+    position:relative;
+    left:10px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+    cursor:pointer;
+  }
+
+  button:hover::after, button:focus::after {
+    animation: sheen 1s forwards;
+    cursor:pointer;
+  }
+
+  @keyframes sheen {
+    100% {
+      transform: rotateZ(60deg) translate(1em, -9em);
+    }
+  }
