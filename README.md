@@ -1,7 +1,6 @@
 # Frontend Mentor - Product preview card component
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
-
+https://asobien810.github.io/Product-preview-card/ - click here to view the website!
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
